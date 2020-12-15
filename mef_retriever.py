@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import requests
 import os
 import re
@@ -42,9 +43,11 @@ print("just   ", just_url)
 
 file_name = ''
 
+os.system("pkill okular")
+#os.system("rm weathermap")
 
 cmd = "wget " + just_url + " -O weathermap"
 os.system(cmd)
 
 
-os.system("okular weathermap")
+os.system("okular weathermap --presentation")
