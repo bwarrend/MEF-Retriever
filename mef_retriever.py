@@ -18,7 +18,6 @@ body = soup.body
 head = soup.head
 
 links = soup.select('a')
-# [4].text
 
 full_html_of_link = ''
 
